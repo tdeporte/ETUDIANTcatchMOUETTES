@@ -20,6 +20,8 @@ public class Mouette : MonoBehaviour
 
     GameObject[] gos;
 
+    bool captured;
+
     //Méthode renvoyant la miette la plus proche de la mouette
     public GameObject FindClosestMiette()
     {
@@ -61,7 +63,8 @@ public class Mouette : MonoBehaviour
 
     void Start()
     {
-        speed = Random.Range(10, 15);   
+        speed = Random.Range(10, 15);  
+        captured = false; 
     }
 
     void Update()
